@@ -1,0 +1,33 @@
+/* Font-family: Nunito 700
+red: #e01e3c;
+black: #161616;
+white: #ffffff;
+
+
+ */
+h1, h2, h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+button {
+    font-family: 'oswald', sans-serif;
+    font-size: 12px;
+}
