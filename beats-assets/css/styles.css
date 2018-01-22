@@ -31,3 +31,39 @@ button {
     font-family: 'oswald', sans-serif;
     font-size: 12px;
 }
+
+header {
+    height: 80px;
+    background: #161616;
+}
+
+.hero {
+    height: 400px;
+    background: #111;
+}
+
+
+
+.product-lineup-container {
+    height: 400px;
+    background: #222;
+}
+
+
+
+.featured-product-container {
+    height: 400px;
+    background: #333;
+}
+
+
+.product-support-container {
+    height: 400px;
+    background: #444;
+}
+
+
+.subscription-container {
+    height: 400px;
+    background: #555;
+}
