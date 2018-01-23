@@ -47,6 +47,8 @@ header .logo {
     background-size: 40px;
 }
 
+
+
 .desktop-nav {
     display: inline-block;
 }
@@ -57,9 +59,42 @@ header .logo {
 
 }
 
+.desktop-nav ul {
+    background: black;
+    float: right;
+    margin: 10px 0;
+    padding: 0;
+    width: calc(100% - 40px);
+    text-align: right;
+
+}
+
+.desktop-nav li {
+    display: inline-block;
+    margin: 0 25px;
+
+}
+
+
+.desktop-nav a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.desktop-nav a:hover {
+    opacity: 80%;
+    text-decoration: none;
+    color: plum;
+}
+
+/* Mobile Nav Styles */
 .mobile-nav {
     display: none;
     text-align: center;
+    vertical-align: top;
 }
 
 .mobile-nav .logo {
@@ -70,52 +105,22 @@ header .logo {
 .mobile-nav .hamburger-container,
 .mobile-nav .search-container {
     width: 40px;
-    display: inline-block;
-    margin: 20px;
+    margin-left: -4px;
+    margin-top: 8px;
     background: red;
+    vertical-align: top;
 }
 
 .mobile-nav .logo-container {
     display: inline-block;
     width: calc(100%-100px);
-    margin: 20px;
+    margin-left: -4px;
 }
 
 .mobile-nav button {
     background: transparent;
     border: none;
     color: white;
-}
-
-header li {
-    display: inline-block;
-    margin: 0 25px;
-
-}
-
-
-header ul {
-    background: black;
-    float: right;
-    margin: 10px 0;
-    padding: 0;
-    width: calc(100% - 40px);
-    text-align: right;
-
-}
-
-header a {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-
-}
-
-header a:hover {
-    opacity: 80%;
-    text-decoration: none;
-    color: plum;
 }
 
 
@@ -129,20 +134,21 @@ header a:hover {
     }
 }
 
+/* Hero Styles */
+
 .hero {
     height: 400px;
     background: #111;
 }
 
-
-
+/* Product Lineup Styles */
 .product-lineup-container {
     height: 400px;
     background: #222;
 }
 
 
-
+/* Featured Product Styles */
 .featured-product-container {
     height: 400px;
     background: #333;
