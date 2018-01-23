@@ -9,35 +9,70 @@ white: #ffffff;
  /* General Styles */
 h1, h2, h3 {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
 
 }
 
 h1 {
     font-size: 70px;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 50px;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 36px;
+    font-weight: 700;
 }
 
 p {
     font-family: sans-serif;
 }
 
-button {
+.button {
     font-family: 'Oswald', sans-serif;
+    font-weight: 900;
     font-size: 12px;
+    background: red;
+    color: white;
+    padding: 10px 45px;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 40px;
+
+
+}
+
+.red-button {
+    background: #e01e3c;
+    color: #ffffff;
+    border: 2px solid #e01e3c;
+}
+
+.light-button {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #999;
+}
+
+.dark-button {
+    color: #161616;
+    background: transparent;
+    border: 2px solid #999;
+}
+
+.button a:hover {
+    opacity: 80%;
+    text-decoration: none;
 }
 
 header {
     height: 80px;
     background: #161616;
     padding-top: 20px;
+    width: 100%;
 }
 
 header .logo {
@@ -71,10 +106,9 @@ header .logo {
 
 .desktop-nav li {
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 30px;
 
 }
-
 
 .desktop-nav a {
     color: white;
@@ -107,13 +141,21 @@ header .logo {
     width: 40px;
     margin-left: -4px;
     margin-top: 8px;
-    background: red;
     vertical-align: top;
+    background: white;
+}
+
+.mobile-nav .hamburger-container {
+    float: left;
+}
+
+.mobile-nav .hamburger-container {
+    float: right;
 }
 
 .mobile-nav .logo-container {
     display: inline-block;
-    width: calc(100%-100px);
+    width: calc(100%-80px);
     margin-left: -4px;
 }
 
@@ -132,13 +174,54 @@ header .logo {
     .desktop-nav {
         display: none;
     }
+
+    .hero {
+        background-image: url('../img/hero-small.jpg');
+    }
+
+    .mobile-hero-text {
+        display: inline-block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
 
 /* Hero Styles */
 
 .hero {
-    height: 400px;
+    height: calc(100vh - 80px);
     background: #111;
+    background-image: url('../img/hero-large.jpg');
+    background-size:cover;
+    color: white;
+    text-align: center;
+
+}
+
+.hero h1 {
+    font-weight: 900;
+}
+
+.hero-text-container h1 {
+    margin-bottom: 15px;
+
+}
+
+.hero-text-container p {
+    margin-bottom: 35px;
+
+
+}
+
+.hero-text-container {
+    padding-top: 50vh;
+
+}
+
+.mobile-hero-text {
+    display: none;
 }
 
 /* Product Lineup Styles */
